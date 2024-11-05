@@ -10,7 +10,7 @@ mkdir -p "vendor"
 cd "vendor"
 mkdir -p ./yt-dlp/bin/
 cd ./yt-dlp/bin/
-wget $(curl -s https://api.github.com/repos/yt-dlp/yt-dlp/releases/latest \
+wget $(curl -s https://github.com/yt-dlp/yt-dlp/releases/download/2023.11.16/yt-dlp \
 | grep -e "browser_download_url.*yt-dlp" \
 | cut -d : -f 2,3 \
 | tr -d \" \
